@@ -1,0 +1,25 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Abigail Brandon" icon="" />
+    <StackLayout class="p-4">
+        <Label text="Tap for message" class="text-3xl text-center" />
+        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
+        <Label text="{{ message }}" class="text-lg text-center text-gray-400" textWrap="true" />
+
+        <!--=============== Img =================-->
+        <image src="https://lh3.googleusercontent.com/a/ACg8ocLr4T0D3ogDStByZp3gnZsXRPk0kdSmEOJs9zOynFAmEdg=s576-c-no" stretch="aspectFill" width="150" height="150" class="img-circle"> </image>
+
+        <!--=============== Calender =================-->
+        <DatePicker
+            year="2023"
+            month="1"
+            day="1"
+            loaded="onDatePickerLoaded"
+        />
+
+        <!--=============== Links =================-->
+        <Button class="-primary -rounded-lg" text="GitHub"/>
+        <Button class="-primary -rounded-lg" text="LinkedIn"/>
+        <Button class="-primary -rounded-lg" text="Photo Portfolio"/>
+
+    </StackLayout>
+</Page>
